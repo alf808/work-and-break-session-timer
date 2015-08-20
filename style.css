@@ -1,6 +1,5 @@
-
-body       { background:#457e86; font-family: 'Open Sans', sans-serif; font-weight:400; padding-top:3em; text-align:center; }
-
+body { background:#457e86; font-family: 'Open Sans', sans-serif; font-weight:400; padding-top:3em; text-align:center;
+}
 h1 {
   font-size: 5em;
   font-weight: bold;
@@ -11,10 +10,10 @@ h1 {
   color: #2F0ABE
 }
 #breaktime {
-  color:#D747E8;
+  color:#FFFF00;
   font-size: 7em
 }
 button, label, .btn {
   font-weight: bold;
-  font-size: 1.5em
+  font-size: 2em
 }

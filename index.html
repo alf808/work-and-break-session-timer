@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FCC pomodoro timer</title>
+	<title>alf's work/break session timer</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 	<link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
@@ -21,20 +21,16 @@
 					<tr>
 						<td>
 							<h1 class="text-center" id="busytime"></h1>
-							<div class="controls text-center">
-								<button class="btn btn-default set-time" id="m-min"> <i class="fa fa-minus"></i> </button>
-								<label> minutes </label>
-								<button class="btn btn-default set-time" id="m-plus"> <i class="fa fa-plus"></i> </button>
-							</div>
+							<button class="btn btn-default set-time" id="decrease-work"> <i class="fa fa-minus"></i> </button>
+							<label> minutes </label>
+							<button class="btn btn-default set-time" id="increase-work"> <i class="fa fa-plus"></i> </button>
 						</td>
 						<td>&nbsp;&nbsp;</td>
 						<td>
 							<h1 class="text-center" id="breaktime"></h1>
-							<div class="controls text-center">
-								<button class="btn btn-default set-time" id="break-m-min"> <i class="fa fa-minus"></i> </button>
-								<label> minutes </label>
-								<button class="btn btn-default set-time" id="break-m-plus"> <i class="fa fa-plus"></i> </button>
-							</div>
+							<button class="btn btn-default set-time" id="decrease-break"> <i class="fa fa-minus"></i> </button>
+							<label> minutes </label>
+							<button class="btn btn-default set-time" id="increase-break"> <i class="fa fa-plus"></i> </button>
 						</td>
 					</tr></table>
 				</div>
@@ -43,14 +39,11 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
-					<h3>The buttons below control whichever timer is active</h3>
-					<button class="btn btn-default btn-success" id="start">Start</button>
-					<button class="btn btn-default btn-danger" id="stop">Stop</button>
-					<button class="btn btn-default btn-warning" id="reset">Reset</button>
+					<h3>The button below controls whichever timer is active.<br> An active timer must be in pause in order to adjust any of the timers.</h3>
+					<button class="btn btn-default btn-success" id="start"><span id="togglebutton">&nbsp;&nbsp;Start&nbsp;&nbsp;</span></button>
 				</div>
 			</div>
 		</div>
-
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 		<script src="pomo.js" async></script>
 	</body>
