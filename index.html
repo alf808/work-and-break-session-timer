@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FCC pomodoro timer</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+	<link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 class="text-center">LET THE TOIL BEGIN</h1>
+				<table align="center">
+					<tr>
+						<th><h3 class="text-center well well-sm">Busy Time</h3></th>
+						<th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+						<th><h3 class="text-center well well-sm">Break Time</h3></th>
+					</tr>
+					<tr>
+						<td>
+							<h1 class="text-center" id="busytime"></h1>
+							<div class="controls text-center">
+								<button class="btn btn-default set-time" id="m-min"> <i class="fa fa-minus"></i> </button>
+								<label> minutes </label>
+								<button class="btn btn-default set-time" id="m-plus"> <i class="fa fa-plus"></i> </button>
+							</div>
+						</td>
+						<td>&nbsp;&nbsp;</td>
+						<td>
+							<h1 class="text-center" id="breaktime"></h1>
+							<div class="controls text-center">
+								<button class="btn btn-default set-time" id="break-m-min"> <i class="fa fa-minus"></i> </button>
+								<label> minutes </label>
+								<button class="btn btn-default set-time" id="break-m-plus"> <i class="fa fa-plus"></i> </button>
+							</div>
+						</td>
+					</tr></table>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3>The buttons below control whichever timer is active</h3>
+					<button class="btn btn-default btn-success" id="start">Start</button>
+					<button class="btn btn-default btn-danger" id="stop">Stop</button>
+					<button class="btn btn-default btn-warning" id="reset">Reset</button>
+				</div>
+			</div>
+		</div>
+
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src="pomo.js" async></script>
+	</body>
+</html>
